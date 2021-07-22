@@ -17,16 +17,17 @@
             }
             nav {
                 display: flex;
+                padding: 22px 10px 0 15px;
             }
             ul {
                 list-style-type: none;
                 margin: 0;
-                padding: 14px 0 0 18px;
                 width: 100%;
+                padding: 0;
             }
             .navleft {
                 float: left;
-                padding-right:20px;
+                padding:0 10px 0px 10px;
                 font-size: 14px;
             }
             .navright {
@@ -40,10 +41,10 @@
                 color:#222;
                 text-decoration: none;
             }
-            svg {
+            #apps {
                 margin-top: -4px;
-                padding-left: 14px;
-                padding-right: 14px;
+                padding-left: 12px;
+                padding-right: 12px;
             }
             #signIn {
                 font-family: "Roboto", sans-serif;
@@ -68,7 +69,36 @@
                 border-top: 1px solid #dadce0;
                 padding: 15px 30px 15px 30px;
                 color: #70757a;
+                display: flex;
             }
+            .searchbar {
+                border: 1px solid #dadce0;
+                border-radius: 50px;
+            }
+            input {
+                max-width: 480px;
+                width: 60vw;
+                margin: 10px 50px 10px 20px;
+                border: none;
+                outline: none;
+            }
+            #searchglass {
+                margin-bottom: -3px;
+                padding-left: 10px;
+            }
+            .footleft {
+                float: left;
+                padding-right:20px;
+                font-size: 14px;
+            }
+            .footright {
+                float: right;
+                padding-left: 7px;
+                padding-right: 7px;
+                color: rgba(0,0,0,0.87);
+                font-size: 13px;
+            }
+
         </style>
     </head>
     <body>
@@ -83,7 +113,7 @@
                 </li>
                 <li class="navright">
                     <a href="">
-                        <svg width="20px" height="20px">
+                        <svg id="apps" width="20px" height="20px">
                             <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z" fill=#5f6368></path>
                         </svg>
                     </a>
@@ -97,11 +127,23 @@
                 <img class="center" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
             </div>    
             <div>
-                <input class="center">
+                <div class="searchbar">
+                    <svg id="searchglass" width="20px" height="20px">
+                        <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill=#9aa0a6></path>
+                    </svg>
+                    <input class="center">
+                </div>
             </div>
         </main>
         <footer>
-            <div>This is a footer</div>    
+            <ul>
+                <li class="footleft"><a href="">Advertising</a></li>
+                <li class="footleft"><a href=""">Business</a></li>               
+                <li class="footleft"><a href="">How search works</a></li>
+                <li class="footright"><a href="">Settings</a></li>
+                <li class="footright"><a href="">Terms</a></li>
+                <li class="footright"><a href="">Privacy</a></li>
+            </ul>   
         </footer>
     </body>
 </html>
