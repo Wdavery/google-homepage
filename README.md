@@ -6,7 +6,7 @@ I was required to visually emulate the Google homepage as best as possible.
 Some pain points:
 - Getting things placed properly vertically was frustrating. Especially the main search bar.
 - Most of my time was spent trying different ways to get the content centered.
-- Knowing when I should be putting content in a <div>, which was a lot more often than I initially did.
+- Knowing when I should be putting content in a `<div>`, which was a lot more often than I initially did.
 
 For next time:
 - Definitely want to practice using Flexbox more because it was what I ultimately used for alignment of things, but some bits felt a bit hacky. Would definitely start with it in mind next time.
