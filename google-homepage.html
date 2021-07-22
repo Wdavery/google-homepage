@@ -7,28 +7,89 @@
         <style>
             body {
                 background-color:white;
+                font-family: 'Liberation Sans', sans-serif;
             }
-            .center {
-                display: block;
-                margin: auto;
-            }
+
             nav {
                 display: flex;
             }
-
-            img {
-                padding: 20px;
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 14px 0 0 18px;
+                width: 100%;
+            }
+            .navleft {
+                float: left;
+                padding-right:20px;
+                font-size: 14px;
+            }
+            .navright {
+                float: right;
+                padding-left: 7px;
+                padding-right: 7px;
+                color: rgba(0,0,0,0.87);
+                font-size: 13px;
+            }
+            a {
+                color:#222;
+                text-decoration: none;
+            }
+            svg {
+                margin-top: -4px;
+                padding-left: 14px;
+                padding-right: 14px;
+            }
+            #signIn {
+                font-family: "Roboto", sans-serif;
+                font-size: 14px;
+                font-weight: 500;
+                color: #fff;
+                background-color: #1a73e8;
+                padding: 10px 26px;
+                border-radius: 4px;
+                letter-spacing: 0.25px;
+            }
+            main {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
             }
 
         </style>
     </head>
     <body>
         <nav>
-            <div>About</div>
-            <div>Store</div>
+            <ul>
+                <li class="navleft"><a href="">About</a></li>
+                <li class="navleft"><a href=""">Store</a></li>               
+                <li class="navright"> 
+                    <div>
+                    <a id="signIn" href="">Sign in</a>
+                    </div>
+                </li>
+                <li class="navright">
+                    <a href="">
+                        <svg width="20px" height="20px">
+                            <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z" fill=#5f6368></path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="navright"><a href="">Images</a></li>
+                <li class="navright"><a href="">Gmail</a></li>
+            </ul>
         </nav>
-        <img class="center" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
-        <input class="center">
+        <main>
+            <div>
+                <img class="center" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+            </div>    
+            <div>
+                <input class="center">
+            </div>
+        </main>
         <footer>
             <div>This is a footer</div>    
         </footer>
