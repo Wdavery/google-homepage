@@ -28,11 +28,11 @@ nav {
 nav ul {
     display: flex;
 }
-.navLeft {
+#navLeft li {
     padding: 0 10px 0px 10px;
     font-size: 14px;
 }
-.navRight {
+#navRight li {
     padding: 0 7px 0 7px;
     color: rgba(0, 0, 0, 0.87);
     font-size: 13px;
