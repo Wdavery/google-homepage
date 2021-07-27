@@ -3,13 +3,7 @@
 This is my first project for The Odin Project.
 I was required to visually emulate the Google homepage as best as possible.
 
-Some pain points:
+First attempt looked good, but I was not happy with the code at all. I felt very hacky and I struggled getting elements aligned properly.
 
-- Getting things placed properly vertically was frustrating. Especially the main search bar.
-- Most of my time was spent trying different ways to get the content centered.
-- Knowing when I should be putting content in a `<div>`, which was a lot more often than I initially did.
-
-For next time:
-
--   Definitely want to practice using Flexbox more because it was what I ultimately used for alignment of things, but some bits felt a bit hacky. Would definitely start with it in mind next time.
--   I might want to draw out a quick outline of how the sections will be nested before I start. It will likely change, but I found I was constantly adding and removing parents/children to do what I wanted. Need to think about that as I go.
+I then spent some time with Flexbox and came back to this project. With the extra familiarity I managed to clean it up quite a bit during the refactor; mostly removing unneeded `<div>` elements and classes. 
+Thanks to (CSS Diner)[https://flukeout.github.io/], I remembered I could use `#id  A` to select children without needed to add a class to each one. That cleaned up a lot of code.
