@@ -1,3 +1,11 @@
+/* Resets */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main CSS */
 html,
 body {
     height: 100vh;
@@ -12,22 +20,17 @@ body {
 nav {
     display: flex;
     padding: 22px 10px 23vh 15px;
+    justify-content: space-between;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    width: 100%;
-    padding: 0;
+nav ul {
+    display: flex;
 }
-.navleft {
-    float: left;
+.navLeft {
     padding: 0 10px 0px 10px;
     font-size: 14px;
 }
-.navright {
-    float: right;
-    padding-left: 7px;
-    padding-right: 7px;
+.navRight {
+    padding: 0 7px 0 7px;
     color: rgba(0, 0, 0, 0.87);
     font-size: 13px;
 }
