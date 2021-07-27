@@ -61,13 +61,11 @@ nav a {
 main {
     flex: auto;
     padding: 0 0 20vh;
-
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
 .searchbar {
     margin: 25px 0 25px 0;
     border: 1px solid #dadce0;
@@ -97,20 +95,22 @@ button {
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 4px;
 }
+
+/* Footer */
 footer {
     background-color: #f2f2f2;
     border-top: 1px solid #dadce0;
-    padding: 15px 35px 15px 35px;
     display: flex;
     font-size: 14px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
-.footleft {
-    float: left;
-    padding-right: 30px;
+footer ul {
+    display: flex;
+    justify-content: space-between;
 }
-.footright {
-    float: right;
-    padding-left: 30px;
+footer ul li {
+    padding: 15px 15px;
 }
 footer a {
     color: #70757a;
